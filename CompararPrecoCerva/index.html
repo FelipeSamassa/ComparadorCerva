@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparador de Cerva</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script> 
+</head>
+<body>
+    <main>
+        <h1>Comparador de Cerveja</h1> 
+        <div class="container">
+            <div class="block">
+                <h2>Cracudinha</h2>
+                <img src="img/cracudinha.png" alt="cracudinha">
+                <div class="btn">
+                    <button class="min">-</button>
+                    <p id="quantity1">0</p>
+                    <!-- <input type="number" id="quantity1" value="0" readonly> -->
+                    <button class="plus">+</button>
+                </div>
+                <strong>R$</strong><input class="valor" type="number" placeholder="2.39" required>
+                <span class="ml">300</span><strong>ml</strong>
+                <br>
+                <p class="mostrarValor"></p>
+            </div>
+            <div class="block">
+                <h2>Latão</h2>
+                <img src="img/latao.jpg" alt="latao">
+                <div class="btn">
+                    <button class="min">-</button>
+                    <p id="quantity2">0</p>
+                    <!-- <input type="number" id="quantity2" value="0" readonly> -->
+                    <button class="plus">+</button>
+                </div>
+                <!-- <span class="valor">3.99</span> -->
+                <strong>R$</strong><input class="valor" type="number" placeholder="3.99" required>
+                <span class="ml">473</span><strong>ml</strong>
+                <br>
+                <p class="mostrarValor"></p>
+            </div>
+            <div class="block">
+                <h2>Litrão</h2>
+                <img src="img/litrao2.jpg" alt="latao">
+                <div class="btn">
+                    <button class="min">-</button>
+                    <p id="quantity3">0</p>
+                    <!-- <input type="number" id="quantity3" value="0" readonly> -->
+                    <button class="plus">+</button>
+                </div>
+                <strong>R$</strong><input class="valor" type="number" placeholder="7.89" required>
+                <span class="ml">1000</span><strong>ml</strong>
+                <br>
+                <p class="mostrarValor"></p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

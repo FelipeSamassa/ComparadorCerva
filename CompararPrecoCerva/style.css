@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', Times, serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #cccccc73;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+h1 {
+    text-align: center;
+    padding: 2rem 0;
+    color: #b88900;
+}
+
+.block {
+    background-color: #fff;
+    border: 1px solid rgba(211, 208, 41, 0.774);
+    border-radius: 10px;
+    text-align: center;
+    width: 23rem;
+}
+
+h2 {
+    padding-top: .5rem;
+    color: #d3a007;
+}
+
+img {
+    padding: 1rem 0;
+    width: 7rem;
+}
+
+.btn {
+    padding-bottom: .7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn button {
+    background-color: #cccccc;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin: 0 1rem;
+    width: 2.5rem;
+}
+
+#quantity1,
+#quantity2,
+#quantity3 {
+    width: 3rem;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+}
+
+input {
+    margin-bottom: .5rem;
+    width: 3.5rem;
+    height: 1.5rem;
+    padding-left: 3%;
+    border: 1px solid darkgoldenrod;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+.ml {
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: .5rem;
+}
+
+strong {
+    margin-right: .4rem;
+}
+
+.mostrarValor{
+    border: 1px solid #b88900;
+    border-radius: 5px;
+    background-color: #ccc;
+    font-size: 1.2rem;
+    margin: .5rem .5rem .2rem .5rem;
+}
