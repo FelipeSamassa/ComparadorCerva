@@ -21,17 +21,50 @@ const mockHistoryProperty = [
     },
 ]
 
-mockHistoryProperty.map(function(item) {
+// mockHistoryProperty.filter((item) => {
+//     let obj = new Date(item.date)
+//     console.log(obj.getFullYear())
+
+
+// })
+
+mockHistoryProperty.map((item) => {
     let obj = new Date(item.date)
-    //console.log(obj.getFullYear())
+
+    let ulElement = document.createElement('ul')
+    let liElement = document.createElement('li')
+    ulElement.appendChild(liElement)
+    document.body.appendChild(ulElement)
 
     if(obj.getFullYear() === 2023){
-        
-        console.log(obj.toISOString())
-    }
+
+        // let set = new Set(mockHistoryProperty)
+        // let anoItem = Array.from(set)
+        // console.log(...anoItem)
+
+        let title = document.createElement('h3')
+        title.innerHTML = obj.getFullYear()
+        liElement.appendChild(title)
     
-    let p = document.createElement('p')
-    p.innerHTML = obj.getFullYear()
-    document.body.appendChild(p)
+        let texto = document.createElement('p')
+        texto.innerText = `{
+            date: ${obj.toISOString()},
+            price:${item.price}
+        }`      
+        liElement.appendChild(texto)
+
+    } else if(obj.getFullYear() === 2024){
+
+        let title = document.createElement('h3')
+        title.innerHTML = obj.getFullYear()
+        liElement.appendChild(title)
+            
+        let texto = document.createElement('p')
+        texto.innerText = `{
+            date: ${obj.toISOString()},
+            price:${item.price}
+        }`  
+        liElement.appendChild(texto)
+
+    }
 })
-//.sort((a,b) => a - b)
