@@ -4,7 +4,7 @@ const mockHistoryProperty = [
         price:'525000'
     },
     {
-        date:'2024-12-03T20:49:24.299000',
+        date:'2024-12-03T20:49:24.299000', 
         price:'530000'
     },
     {
@@ -21,13 +21,6 @@ const mockHistoryProperty = [
     },
 ]
 
-// mockHistoryProperty.filter((item) => {
-//     let obj = new Date(item.date)
-//     console.log(obj.getFullYear())
-
-
-// })
-
 mockHistoryProperty.map((item) => {
     let obj = new Date(item.date)
 
@@ -37,10 +30,6 @@ mockHistoryProperty.map((item) => {
     document.body.appendChild(ulElement)
 
     if(obj.getFullYear() === 2023){
-
-        // let set = new Set(mockHistoryProperty)
-        // let anoItem = Array.from(set)
-        // console.log(...anoItem)
 
         let title = document.createElement('h3')
         title.innerHTML = obj.getFullYear()
